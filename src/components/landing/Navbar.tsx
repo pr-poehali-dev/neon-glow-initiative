@@ -80,9 +80,9 @@ export default function Navbar() {
             </div>
 
             <div className="md:hidden">
-              <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                {isMenuOpen ? <X className="h-5 w-5 text-gray-300" /> : <Menu className="h-5 w-5 text-gray-300" />}
-              </Button>
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-gray-300 hover:text-white">
+                {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              </button>
             </div>
           </div>
         </div>
