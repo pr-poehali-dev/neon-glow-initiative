@@ -1,35 +1,35 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
-import { TrendingUp, Target, Briefcase, Palette, Home, BarChart3 } from "lucide-react"
+import { TrendingUp, Target, Briefcase, Home, BarChart3 } from "lucide-react"
 
 const businessTypes = [
   {
     id: "retail",
-    name: "Ритейл",
+    name: "Авито",
     icon: <Briefcase className="w-6 h-6" />,
-    multiplier: 3.2,
-    description: "E-commerce и магазины",
+    multiplier: 4.5,
+    description: "Объявления и продвижение",
   },
   {
     id: "real-estate",
-    name: "Недвижимость",
-    icon: <Home className="w-6 h-6" />,
-    multiplier: 4.1,
-    description: "Агенты и управление",
+    name: "Яндекс.Директ",
+    icon: <Target className="w-6 h-6" />,
+    multiplier: 5.2,
+    description: "Контекстная реклама",
   },
   {
     id: "artist",
-    name: "Креатив",
-    icon: <Palette className="w-6 h-6" />,
-    multiplier: 2.8,
-    description: "Блогеры и артисты",
+    name: "Я.Бизнес",
+    icon: <Home className="w-6 h-6" />,
+    multiplier: 3.8,
+    description: "Карты и локальный поиск",
   },
   {
     id: "professional",
-    name: "B2B услуги",
-    icon: <Target className="w-6 h-6" />,
-    multiplier: 3.7,
-    description: "Консалтинг и сервисы",
+    name: "Комплекс",
+    icon: <BarChart3 className="w-6 h-6" />,
+    multiplier: 6.1,
+    description: "Все три канала сразу",
   },
 ]
 
@@ -66,9 +66,9 @@ export default function ROICalculatorHome() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">Рассчитайте ROI</h2>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">Сколько вы заработаете?</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Узнайте, какую выручку вы можете получить с нашими маркетинговыми стратегиями
+            Рассчитайте потенциальный доход от рекламы на вашем канале
           </p>
         </motion.div>
 
@@ -93,7 +93,7 @@ export default function ROICalculatorHome() {
             <div className="space-y-8">
               {/* Business Type Selection */}
               <div>
-                <label className="block text-lg font-medium text-white mb-4">Выберите тип бизнеса</label>
+                <label className="block text-lg font-medium text-white mb-4">Выберите рекламный канал</label>
                 <div className="grid grid-cols-2 gap-3">
                   {businessTypes.map((business) => (
                     <motion.button

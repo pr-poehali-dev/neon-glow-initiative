@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
 import { motion } from "framer-motion"
@@ -50,7 +49,7 @@ export default function Navbar() {
             <div className="flex items-center">
               <a href="/" className="flex items-center space-x-3">
                 <span className="text-xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Pulse Digital
+                  avitodem.ru
                 </span>
               </a>
             </div>
@@ -73,12 +72,9 @@ export default function Navbar() {
             </div>
 
             <div className="hidden md:flex items-center space-x-4">
-              <Button variant="ghost" className="text-sm text-gray-300 hover:text-white">
-                Войти
-              </Button>
               <a href="#get-started">
                 <AnimatedButton size="sm" className="bg-white text-black hover:bg-gray-100">
-                  Начать
+                  Получить консультацию
                 </AnimatedButton>
               </a>
             </div>
